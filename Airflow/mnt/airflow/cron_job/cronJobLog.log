@@ -1,0 +1,139 @@
+Traceback (most recent call last):
+  File "/Users/kevinbaum/Desktop/CronTest/cronfiletest.py", line 141, in <module>
+    pull_craigslist_links()
+  File "/Users/kevinbaum/Desktop/CronTest/cronfiletest.py", line 79, in pull_craigslist_links
+    postings_count = get_postings_count(craigslist_search_first_page_url, chrome_driver_path)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/kevinbaum/Desktop/CronTest/cronfiletest.py", line 48, in get_postings_count
+    driver = webdriver.Chrome(service=service, options=options)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/kevinbaum/ENTER/lib/python3.11/site-packages/selenium/webdriver/chrome/webdriver.py", line 45, in __init__
+    super().__init__(
+  File "/Users/kevinbaum/ENTER/lib/python3.11/site-packages/selenium/webdriver/chromium/webdriver.py", line 49, in __init__
+    self.service.path = DriverFinder.get_path(self.service, options)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/kevinbaum/ENTER/lib/python3.11/site-packages/selenium/webdriver/common/driver_finder.py", line 44, in get_path
+    raise NoSuchDriverException(f"Unable to locate or obtain driver for {options.capabilities['browserName']}")
+selenium.common.exceptions.NoSuchDriverException: Message: Unable to locate or obtain driver for chrome; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location
+
+Traceback (most recent call last):
+  File "/Users/kevinbaum/Desktop/CronTest/cronfiletest.py", line 142, in <module>
+    pull_craigslist_links()
+  File "/Users/kevinbaum/Desktop/CronTest/cronfiletest.py", line 80, in pull_craigslist_links
+    postings_count = get_postings_count(craigslist_search_first_page_url, chrome_driver_path)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/kevinbaum/Desktop/CronTest/cronfiletest.py", line 49, in get_postings_count
+    driver = webdriver.Chrome(service=service, options=options)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/kevinbaum/ENTER/lib/python3.11/site-packages/selenium/webdriver/chrome/webdriver.py", line 45, in __init__
+    super().__init__(
+  File "/Users/kevinbaum/ENTER/lib/python3.11/site-packages/selenium/webdriver/chromium/webdriver.py", line 49, in __init__
+    self.service.path = DriverFinder.get_path(self.service, options)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/kevinbaum/ENTER/lib/python3.11/site-packages/selenium/webdriver/common/driver_finder.py", line 44, in get_path
+    raise NoSuchDriverException(f"Unable to locate or obtain driver for {options.capabilities['browserName']}")
+selenium.common.exceptions.NoSuchDriverException: Message: Unable to locate or obtain driver for chrome; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location
+
+CSV file has been created successfully.
+CSV file has been created successfully.
+CSV file has been created successfully.
+CSV file has been created successfully.
+CSV file has been created successfully.
+CSV file has been created successfully.
+Traceback (most recent call last):
+  File "/Users/kevinbaum/Desktop/Project_Repos/Capstone_Project/capstone/Airflow/cron_job/cronJob.py", line 142, in <module>
+    pull_craigslist_links()
+  File "/Users/kevinbaum/Desktop/Project_Repos/Capstone_Project/capstone/Airflow/cron_job/cronJob.py", line 136, in pull_craigslist_links
+    links_df.to_csv('/opt/airflow/dags/files/craigslist_links.csv', index=False)
+  File "/Users/kevinbaum/ENTER/lib/python3.11/site-packages/pandas/core/generic.py", line 3902, in to_csv
+    return DataFrameRenderer(formatter).to_csv(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/kevinbaum/ENTER/lib/python3.11/site-packages/pandas/io/formats/format.py", line 1152, in to_csv
+    csv_formatter.save()
+  File "/Users/kevinbaum/ENTER/lib/python3.11/site-packages/pandas/io/formats/csvs.py", line 247, in save
+    with get_handle(
+         ^^^^^^^^^^^
+  File "/Users/kevinbaum/ENTER/lib/python3.11/site-packages/pandas/io/common.py", line 739, in get_handle
+    check_parent_directory(str(handle))
+  File "/Users/kevinbaum/ENTER/lib/python3.11/site-packages/pandas/io/common.py", line 604, in check_parent_directory
+    raise OSError(rf"Cannot save file into a non-existent directory: '{parent}'")
+OSError: Cannot save file into a non-existent directory: '/opt/airflow/dags/files'
+Traceback (most recent call last):
+  File "/Users/kevinbaum/Desktop/Project_Repos/Capstone_Project/capstone/Airflow/cron_job/cronJob.py", line 142, in <module>
+    pull_craigslist_links()
+  File "/Users/kevinbaum/Desktop/Project_Repos/Capstone_Project/capstone/Airflow/cron_job/cronJob.py", line 136, in pull_craigslist_links
+    links_df.to_csv('/opt/airflow/dags/files/craigslist_links.csv', index=False)
+  File "/Users/kevinbaum/ENTER/lib/python3.11/site-packages/pandas/core/generic.py", line 3902, in to_csv
+    return DataFrameRenderer(formatter).to_csv(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/kevinbaum/ENTER/lib/python3.11/site-packages/pandas/io/formats/format.py", line 1152, in to_csv
+    csv_formatter.save()
+  File "/Users/kevinbaum/ENTER/lib/python3.11/site-packages/pandas/io/formats/csvs.py", line 247, in save
+    with get_handle(
+         ^^^^^^^^^^^
+  File "/Users/kevinbaum/ENTER/lib/python3.11/site-packages/pandas/io/common.py", line 739, in get_handle
+    check_parent_directory(str(handle))
+  File "/Users/kevinbaum/ENTER/lib/python3.11/site-packages/pandas/io/common.py", line 604, in check_parent_directory
+    raise OSError(rf"Cannot save file into a non-existent directory: '{parent}'")
+OSError: Cannot save file into a non-existent directory: '/opt/airflow/dags/files'
+Traceback (most recent call last):
+  File "/Users/kevinbaum/Desktop/Project_Repos/Capstone_Project/capstone/Airflow/cron_job/cronJob.py", line 142, in <module>
+    pull_craigslist_links()
+  File "/Users/kevinbaum/Desktop/Project_Repos/Capstone_Project/capstone/Airflow/cron_job/cronJob.py", line 136, in pull_craigslist_links
+    links_df.to_csv('/opt/airflow/cron_output/craigslist_links.csv', index=False)
+  File "/Users/kevinbaum/ENTER/lib/python3.11/site-packages/pandas/core/generic.py", line 3902, in to_csv
+    return DataFrameRenderer(formatter).to_csv(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/kevinbaum/ENTER/lib/python3.11/site-packages/pandas/io/formats/format.py", line 1152, in to_csv
+    csv_formatter.save()
+  File "/Users/kevinbaum/ENTER/lib/python3.11/site-packages/pandas/io/formats/csvs.py", line 247, in save
+    with get_handle(
+         ^^^^^^^^^^^
+  File "/Users/kevinbaum/ENTER/lib/python3.11/site-packages/pandas/io/common.py", line 739, in get_handle
+    check_parent_directory(str(handle))
+  File "/Users/kevinbaum/ENTER/lib/python3.11/site-packages/pandas/io/common.py", line 604, in check_parent_directory
+    raise OSError(rf"Cannot save file into a non-existent directory: '{parent}'")
+OSError: Cannot save file into a non-existent directory: '/opt/airflow/cron_output'
+CSV file has been created successfully.
+CSV file has been created successfully.
+Traceback (most recent call last):
+  File "/Users/kevinbaum/Desktop/Project_Repos/Capstone_Project/capstone/Airflow/mnt/airflow/cron_job/cronJob.py", line 153, in <module>
+    pull_craigslist_links()
+  File "/Users/kevinbaum/Desktop/Project_Repos/Capstone_Project/capstone/Airflow/mnt/airflow/cron_job/cronJob.py", line 86, in pull_craigslist_links
+    postings_count = get_postings_count(craigslist_search_first_page_url, chrome_driver_path)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/kevinbaum/Desktop/Project_Repos/Capstone_Project/capstone/Airflow/mnt/airflow/cron_job/cronJob.py", line 55, in get_postings_count
+    driver = webdriver.Chrome(service=service, options=options)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/kevinbaum/ENTER/lib/python3.11/site-packages/selenium/webdriver/chrome/webdriver.py", line 45, in __init__
+    super().__init__(
+  File "/Users/kevinbaum/ENTER/lib/python3.11/site-packages/selenium/webdriver/chromium/webdriver.py", line 49, in __init__
+    self.service.path = DriverFinder.get_path(self.service, options)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/kevinbaum/ENTER/lib/python3.11/site-packages/selenium/webdriver/common/driver_finder.py", line 44, in get_path
+    raise NoSuchDriverException(f"Unable to locate or obtain driver for {options.capabilities['browserName']}")
+selenium.common.exceptions.NoSuchDriverException: Message: Unable to locate or obtain driver for chrome; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location
+
+Traceback (most recent call last):
+  File "/Users/kevinbaum/Desktop/Project_Repos/Capstone_Project/capstone/Airflow/mnt/airflow/cron_job/cronJob.py", line 154, in <module>
+    pull_craigslist_links()
+  File "/Users/kevinbaum/Desktop/Project_Repos/Capstone_Project/capstone/Airflow/mnt/airflow/cron_job/cronJob.py", line 87, in pull_craigslist_links
+    postings_count = get_postings_count(craigslist_search_first_page_url, chrome_driver_path)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/kevinbaum/Desktop/Project_Repos/Capstone_Project/capstone/Airflow/mnt/airflow/cron_job/cronJob.py", line 56, in get_postings_count
+    driver = webdriver.Chrome(service=service, options=options)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/kevinbaum/ENTER/lib/python3.11/site-packages/selenium/webdriver/chrome/webdriver.py", line 45, in __init__
+    super().__init__(
+  File "/Users/kevinbaum/ENTER/lib/python3.11/site-packages/selenium/webdriver/chromium/webdriver.py", line 49, in __init__
+    self.service.path = DriverFinder.get_path(self.service, options)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/kevinbaum/ENTER/lib/python3.11/site-packages/selenium/webdriver/common/driver_finder.py", line 44, in get_path
+    raise NoSuchDriverException(f"Unable to locate or obtain driver for {options.capabilities['browserName']}")
+selenium.common.exceptions.NoSuchDriverException: Message: Unable to locate or obtain driver for chrome; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location
+
+CSV file has been created successfully.
+CSV file has been created successfully.
+CSV file has been created successfully.
+CSV file has been created successfully.
+CSV file has been created successfully.
