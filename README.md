@@ -30,6 +30,8 @@ The purpose of this project is to investigate the effects of various independent
 
 
 ### Technologies
+• Docker
+
 • Python
 
 • Jupyter Notebook
